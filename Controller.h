@@ -13,8 +13,6 @@ class Controller {
 
   void OnQuit();
 
-  void PassObjectToRender();
-
  private:
   Model::GameEngine& game_;
   View::View& view_;

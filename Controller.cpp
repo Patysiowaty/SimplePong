@@ -1,11 +1,11 @@
 #include "Controller.h"
-
-Controller::Controller::Controller(Model::GameEngine& game, View::View& view)
+namespace Controller {
+Controller::Controller(Model::GameEngine& game, View::View& view)
     : game_{game}, view_{view} {}
 
-void Controller::Controller::Initialize() {}
+void Controller::Initialize() {}
 
-void Controller::Controller::GetEvent() {
+void Controller::GetEvent() {
   SDL_Event user_event_;
 
   if (SDL_PollEvent(&user_event_)) {
@@ -20,8 +20,5 @@ void Controller::Controller::GetEvent() {
   }
 }
 
-void Controller::Controller::OnQuit() {}
-
-void Controller::Controller::PassObjectToRender() {
-  view_.GetObjects(game_.GetCurrentScene().GetSceneObjects());
-}
+void Controller::OnQuit() {}
+}  // namespace Controller

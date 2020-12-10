@@ -67,6 +67,9 @@
     <Filter Include="Model\Ball">
       <UniqueIdentifier>{dcea6728-0b71-443b-be1d-e0e6741b71d6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="View\Renderer">
+      <UniqueIdentifier>{c24320f9-3648-4841-99e5-59b918df16b9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameEngine.cpp">
@@ -125,6 +128,9 @@
     </ClCompile>
     <ClCompile Include="Ball.cpp">
       <Filter>Model\Ball</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer.cpp">
+      <Filter>View\Renderer</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -187,6 +193,9 @@
     </ClInclude>
     <ClInclude Include="Ball.h">
       <Filter>Model\Ball</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer.h">
+      <Filter>View\Renderer</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

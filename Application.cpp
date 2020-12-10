@@ -4,6 +4,7 @@ Application::Application(const std::string& game_name)
     : game_name_{game_name}, controller_{game_, view_} {}
 
 void Application::InitializeComponents() try {
+  std::srand(time(nullptr));
   game_.Initialize();
   view_.Initialize();
   view_.GetWindow().SetWindowName(game_name_);
@@ -14,6 +15,7 @@ void Application::InitializeComponents() try {
 
 void Application::Run() try {
   while (game_.IsRunning()) {
+    SDL_Delay(1000/60);
     game_.Update();
     view_.Render();
     controller_.GetEvent();
@@ -24,6 +26,5 @@ void Application::Run() try {
 
 void Application::OnQuit() {
   game_.OnQuit();
-  view_.OnQuit();
   controller_.OnQuit();
 }

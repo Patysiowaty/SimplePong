@@ -2,7 +2,7 @@
 
 namespace Model {
 
-PlayGameScene::PlayGameScene() : game_board_{player_, enemy_} {}
+PlayGameScene::PlayGameScene() : game_board_{player_, enemy_, ball_} {}
 
 PlayGameScene::~PlayGameScene() {}
 

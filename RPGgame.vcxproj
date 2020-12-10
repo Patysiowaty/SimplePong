@@ -163,6 +163,7 @@
     <ClCompile Include="PlayGameScene.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MainMenu.cpp" />
+    <ClCompile Include="Renderer.cpp" />
     <ClCompile Include="Scene.cpp" />
     <ClCompile Include="Surface.cpp" />
     <ClCompile Include="Texture.cpp" />
@@ -185,6 +186,7 @@
     <ClInclude Include="ICommand.h" />
     <ClInclude Include="GameEngine.h" />
     <ClInclude Include="MainMenu.h" />
+    <ClInclude Include="Renderer.h" />
     <ClInclude Include="Scene.h" />
     <ClInclude Include="Surface.h" />
     <ClInclude Include="Texture.h" />
