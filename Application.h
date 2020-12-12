@@ -1,7 +1,8 @@
 #pragma once
 #include "Controller.h"
-#include "GameEngine.h"
+#include "PlayGameScene.h"
 #include "View.h"
+#include "Controller.h"
 
 class Application {
  public:
@@ -12,10 +13,9 @@ class Application {
   void OnQuit();
 
  private:
-  Model::GameEngine game_;
+  Model::PlayGameScene game_;
   View::View view_;
-  Controller::Controller controller_;
-
+  Controller::Controller main_controller_;
 
   std::string game_name_;
 };

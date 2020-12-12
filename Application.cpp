@@ -1,30 +1,26 @@
 #include "Application.h"
 
 Application::Application(const std::string& game_name)
-    : game_name_{game_name}, controller_{game_, view_} {}
+    : game_name_{game_name},
+      game_{view_.GetRenderer()},
+      main_controller_{game_, view_} {}
 
 void Application::InitializeComponents() try {
-  std::srand(time(nullptr));
-  game_.Initialize();
   view_.Initialize();
-  view_.GetWindow().SetWindowName(game_name_);
-  controller_.Initialize();
+  game_.LoadScene();
+  main_controller_.Initialize();
 } catch (std::exception& e) {
   std::cerr << e.what() << std::endl;
 }
 
 void Application::Run() try {
-  while (game_.IsRunning()) {
-    SDL_Delay(1000/60);
-    game_.Update();
+  while (true) {
+    game_.UpdateScene();
     view_.Render();
-    controller_.GetEvent();
+    main_controller_.GetEvent();
   }
 } catch (std::exception& e) {
   std::cerr << e.what() << std::endl;
 }
 
-void Application::OnQuit() {
-  game_.OnQuit();
-  controller_.OnQuit();
-}
+void Application::OnQuit() {}

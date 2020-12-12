@@ -19,6 +19,7 @@ class View {
   void Render();
 
   Window& GetWindow();
+  Renderer& GetRenderer();
 
  private:
   Window window_;

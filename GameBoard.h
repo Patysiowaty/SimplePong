@@ -17,16 +17,18 @@ class GameBoard {
   int32_t GetBoardWidth();
   int32_t GetBoardHeight();
 
+  bool Play();
+
   void ResetGame();
 
  private:
-  const int32_t kBoardWidth_ = 100;
-  const int32_t kBoardHeight_ = 40;
+  const int32_t kBoardWidth_ = 1280;
+  const int32_t kBoardHeight_ = 600;
 
   SDL_Rect board_ = {0, 0, kBoardWidth_, kBoardHeight_};
 
-  const SDL_Point kPlayerStartPos_ = {kBoardWidth_ - 90, kBoardHeight_ / 2};
-  const SDL_Point kEnemyStartPos_ = {kBoardWidth_ - 10, kBoardHeight_ / 2};
+  const SDL_Point kPlayerStartPos_ = {10, kBoardHeight_ / 2};
+  const SDL_Point kEnemyStartPos_ = {kBoardWidth_ - 40, kBoardHeight_ / 2};
   const SDL_Point kBallStartPost_ = {kBoardWidth_ / 2, kBoardHeight_ / 2};
 
   Player& player_;

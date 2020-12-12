@@ -8,11 +8,14 @@ class Texture {
 
   void CreateTexture(const Other::Surface& surface, SDL_Renderer* renderer);
 
+  void SetTextureSize(SDL_Rect size);
+  void SetTexturePosition(SDL_Point position);
+
+  SDL_Rect* GetTextureSize();
   SDL_Texture* GetTexture() const;
-  std::string GetTextureName();
 
  private:
   SDL_Texture* texture_ = {nullptr};
-  std::string texture_name_ = {""};
+  SDL_Rect size_ = {0, 0, 0, 0};
 };
 }  // namespace View

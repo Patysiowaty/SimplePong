@@ -1,20 +1,18 @@
 #pragma once
-#include "GameEngine.h"
 #include "View.h"
+#include "Scene.h"
 
 namespace Controller {
 class Controller {
  public:
-  Controller(Model::GameEngine& game, View::View& view);
+  Controller(Model::Scene& scene, View::View& view);
 
   void Initialize();
 
   void GetEvent();
 
-  void OnQuit();
-
  private:
-  Model::GameEngine& game_;
+  Model::Scene& scene_;
   View::View& view_;
 };
 }  // namespace Controller

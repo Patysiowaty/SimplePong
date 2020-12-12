@@ -27,6 +27,8 @@ void Surface::SetSurfaceDestination(const std::string& file_destination) {
   file_destination_ = file_destination;
 }
 
+std::string Surface::GetSurfaceDestination() const { return file_destination_; }
+
 SDL_Surface* Surface::GetSurface() const { return surface_; }
 
 std::string Surface::GetSurfaceName() const { return name_; }

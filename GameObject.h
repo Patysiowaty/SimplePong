@@ -1,7 +1,8 @@
 #pragma once
+#include "ModelPublisher.h"
 #include "Surface.h"
 
-class GameObject  {
+class GameObject : public ModelPublisher {
  public:
   GameObject();
   GameObject(const std::string& icon);
@@ -12,11 +13,15 @@ class GameObject  {
   virtual ~GameObject();
 
   virtual Other::Surface& GetSurface();
-  virtual SDL_Point GetPosition() const;
+  virtual SDL_Point GetObjectPosition() const;
+  virtual SDL_Rect GetObjectSize() const;
 
-  virtual void SetSize(int width, int height);
-  virtual void SetPosition(int x, int y);
-  virtual void SetPosition(const SDL_Point& position);
+  virtual void SetObjectSize(int width, int height);
+  virtual void SetObjectPosition(int x, int y);
+  virtual void SetObjectPosition(const SDL_Point& position);
+
+ private:
+  void OnPositionUpdate();
 
  private:
   Other::Surface surface_;

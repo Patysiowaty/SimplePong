@@ -11,15 +11,15 @@ Player::Player(const std::string& icon_path, const SDL_Point& position,
 Player::~Player() {}
 
 void Player::MoveUp() {
-  auto position = GameObject::GetPosition();
+  auto position = GameObject::GetObjectPosition();
   position.y += 1;
-  GameObject::SetPosition(position);
+  GameObject::SetObjectPosition(position);
 }
 
 void Player::MoveDown() {
-  auto position = GameObject::GetPosition();
+  auto position = GameObject::GetObjectPosition();
   position.y -= 1;
-  GameObject::SetPosition(position);
+  GameObject::SetObjectPosition(position);
 }
 
 }  // namespace Model

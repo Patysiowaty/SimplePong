@@ -11,12 +11,13 @@ class Surface {
   ~Surface();
   void LoadSurface();
   void SetSurfaceDestination(const std::string& file_destination);
+  std::string GetSurfaceDestination() const;
   SDL_Surface* GetSurface() const;
   std::string GetSurfaceName() const;
 
  private:
   SDL_Surface* surface_ = {nullptr};
-  std::string name_ = {""};
+  std::string name_;
   std::string file_destination_;
 };
 }  // namespace Other

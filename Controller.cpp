@@ -1,7 +1,7 @@
 #include "Controller.h"
 namespace Controller {
-Controller::Controller(Model::GameEngine& game, View::View& view)
-    : game_{game}, view_{view} {}
+Controller::Controller(Model::Scene& scene, View::View& view)
+    : scene_{scene}, view_{view} {}
 
 void Controller::Initialize() {}
 
@@ -11,7 +11,7 @@ void Controller::GetEvent() {
   if (SDL_PollEvent(&user_event_)) {
     switch (user_event_.type) {
       case SDL_QUIT: {
-        game_.SetQuit();
+        exit(0);
         break;
       }
       default:
@@ -19,6 +19,4 @@ void Controller::GetEvent() {
     }
   }
 }
-
-void Controller::OnQuit() {}
 }  // namespace Controller

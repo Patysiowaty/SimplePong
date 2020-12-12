@@ -17,7 +17,7 @@ class GameEngine {
 
   void OnQuit();
 
-  const PlayGameScene& GetCurrentScene();
+  //const PlayGameScene& GetCurrentScene();
 
   bool IsRunning();
 
@@ -26,6 +26,6 @@ class GameEngine {
  private:
   bool is_run_ = {false};
   // TODO: Make scene changer
-  PlayGameScene play_game_;
+  //PlayGameScene play_game_;
 };
 }  // namespace Model

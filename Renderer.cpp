@@ -6,9 +6,7 @@ Renderer::~Renderer() { SDL_DestroyRenderer(renderer_); }
 
 void Renderer::Initialize() {
   renderer_ = SDL_CreateRenderer(window_.GetWindowContext(), -1,
-                                 SDL_RENDERER_TARGETTEXTURE |
-                                     SDL_RENDERER_PRESENTVSYNC |
-                                     SDL_RENDERER_ACCELERATED);
+                                 SDL_RENDERER_ACCELERATED);
 
   if (renderer_ == nullptr)
     throw std::runtime_error{"Failed to create renderer: " +

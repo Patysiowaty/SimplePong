@@ -23,10 +23,11 @@ void View::Initialize() {
 }
 
 void View::Render() {
-  SDL_RenderClear(renderer_.GetRenderer());
-  SDL_SetRenderDrawColor(renderer_.GetRenderer(), 100, 100, 100, 0);
   SDL_RenderPresent(renderer_.GetRenderer());
+  SDL_SetRenderDrawColor(renderer_.GetRenderer(), 200, 100, 100, 255);
+  SDL_RenderClear(renderer_.GetRenderer());
 }
 
 Window& View::GetWindow() { return window_; }
+Renderer& View::GetRenderer() { return renderer_; }
 }  // namespace View

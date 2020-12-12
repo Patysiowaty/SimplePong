@@ -158,7 +158,8 @@
     <ClCompile Include="GameBoard.cpp" />
     <ClCompile Include="GameEngine.cpp" />
     <ClCompile Include="GameObject.cpp" />
-    <ClCompile Include="Listener.cpp" />
+    <ClCompile Include="ModelPublisher.cpp" />
+    <ClCompile Include="ModelView.cpp" />
     <ClCompile Include="Paddle.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="PlayGameScene.cpp" />
@@ -182,6 +183,9 @@
     <ClInclude Include="GameBoard.h" />
     <ClInclude Include="GameObject.h" />
     <ClInclude Include="Listener.h" />
+    <ClInclude Include="ModelListener.h" />
+    <ClInclude Include="ModelPublisher.h" />
+    <ClInclude Include="ModelView.h" />
     <ClInclude Include="MoveDirection.h" />
     <ClInclude Include="Paddle.h" />
     <ClInclude Include="Player.h" />
