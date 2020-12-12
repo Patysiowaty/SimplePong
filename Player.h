@@ -3,6 +3,7 @@
 namespace Model {
 class Player : public Paddle {
  public:
+  Player();
   Player(const std::string& icon);
 
   Player(const std::string& icon, const SDL_Point& position,

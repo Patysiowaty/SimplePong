@@ -6,13 +6,15 @@ GameObject::GameObject(const std::string& icon_path, const SDL_Point& postion,
   surface_.LoadSurface();
 }
 
+GameObject::GameObject() {}
+
 GameObject::GameObject(const std::string& icon) : surface_{icon} {
   surface_.LoadSurface();
 }
 
 GameObject::~GameObject() {}
 
-Other::Surface GameObject::GetSurface() const { return surface_; }
+Other::Surface& GameObject::GetSurface() { return surface_; }
 
 SDL_Point GameObject::GetPosition() const { return position_; }
 
@@ -29,3 +31,4 @@ void GameObject::SetPosition(int x, int y) {
 void GameObject::SetPosition(const SDL_Point& position) {
   position_ = {position};
 }
+

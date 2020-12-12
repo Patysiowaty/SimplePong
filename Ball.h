@@ -3,6 +3,7 @@
 namespace Model {
 class Ball : public GameObject {
  public:
+  Ball();
   Ball(const std::string& icon, const SDL_Point& position,
        const SDL_Rect& size);
 

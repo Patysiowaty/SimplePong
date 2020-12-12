@@ -1,8 +1,9 @@
 #pragma once
 #include "Surface.h"
 
-class GameObject {
+class GameObject  {
  public:
+  GameObject();
   GameObject(const std::string& icon);
 
   GameObject(const std::string& icon, const SDL_Point& postion,
@@ -10,7 +11,7 @@ class GameObject {
 
   virtual ~GameObject();
 
-  virtual Other::Surface GetSurface() const;
+  virtual Other::Surface& GetSurface();
   virtual SDL_Point GetPosition() const;
 
   virtual void SetSize(int width, int height);

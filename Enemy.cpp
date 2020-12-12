@@ -1,5 +1,7 @@
 #include "Enemy.h"
 namespace Model {
+Enemy::Enemy() {}
+
 Enemy::Enemy(const std::string& icon, const SDL_Point& postion,
              const SDL_Rect& size)
     : Paddle{icon, postion, size} {}

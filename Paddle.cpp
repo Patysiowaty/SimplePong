@@ -1,6 +1,7 @@
 #include "Paddle.h"
 
 namespace Model {
+Paddle::Paddle() {}
 Paddle::Paddle(const std::string& icon) : GameObject{icon} {}
 
 Paddle::Paddle(const std::string& icon, const SDL_Point& position,

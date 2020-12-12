@@ -70,6 +70,12 @@
     <Filter Include="View\Renderer">
       <UniqueIdentifier>{c24320f9-3648-4841-99e5-59b918df16b9}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Listeners">
+      <UniqueIdentifier>{9095b4bc-e80f-4806-9b1d-70a4286d550c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Publisher">
+      <UniqueIdentifier>{769ec159-d059-4dda-a341-3e534864de0a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameEngine.cpp">
@@ -131,6 +137,12 @@
     </ClCompile>
     <ClCompile Include="Renderer.cpp">
       <Filter>View\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Publisher.cpp">
+      <Filter>Publisher</Filter>
+    </ClCompile>
+    <ClCompile Include="Listener.cpp">
+      <Filter>Listeners</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -196,6 +208,12 @@
     </ClInclude>
     <ClInclude Include="Renderer.h">
       <Filter>View\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Publisher.h">
+      <Filter>Publisher</Filter>
+    </ClInclude>
+    <ClInclude Include="Listener.h">
+      <Filter>Listeners</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

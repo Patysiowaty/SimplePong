@@ -16,5 +16,6 @@ class Application {
   View::View view_;
   Controller::Controller controller_;
 
+
   std::string game_name_;
 };

@@ -1,5 +1,7 @@
 #include "Player.h"
 namespace Model {
+Player::Player() {}
+
 Player::Player(const std::string& icon) : Paddle{icon} {}
 
 Player::Player(const std::string& icon_path, const SDL_Point& position,

@@ -158,11 +158,13 @@
     <ClCompile Include="GameBoard.cpp" />
     <ClCompile Include="GameEngine.cpp" />
     <ClCompile Include="GameObject.cpp" />
+    <ClCompile Include="Listener.cpp" />
     <ClCompile Include="Paddle.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="PlayGameScene.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MainMenu.cpp" />
+    <ClCompile Include="Publisher.cpp" />
     <ClCompile Include="Renderer.cpp" />
     <ClCompile Include="Scene.cpp" />
     <ClCompile Include="Surface.cpp" />
@@ -179,6 +181,7 @@
     <ClInclude Include="Enemy.h" />
     <ClInclude Include="GameBoard.h" />
     <ClInclude Include="GameObject.h" />
+    <ClInclude Include="Listener.h" />
     <ClInclude Include="MoveDirection.h" />
     <ClInclude Include="Paddle.h" />
     <ClInclude Include="Player.h" />
@@ -186,6 +189,7 @@
     <ClInclude Include="ICommand.h" />
     <ClInclude Include="GameEngine.h" />
     <ClInclude Include="MainMenu.h" />
+    <ClInclude Include="Publisher.h" />
     <ClInclude Include="Renderer.h" />
     <ClInclude Include="Scene.h" />
     <ClInclude Include="Surface.h" />

@@ -13,7 +13,7 @@ void GameBoard::InitializeGame() {
   ball_.SetPosition(kBallStartPost_);
 }
 
-Player& GameBoard::GetPlayer() const { return player_; }
+Player& GameBoard::GetPlayer() { return player_; }
 
 void GameBoard::MovePlayer(MoveDirection direction) {
   if (direction == MoveDirection::kDown) {
@@ -31,4 +31,10 @@ void GameBoard::MovePlayer(MoveDirection direction) {
 int32_t GameBoard::GetBoardWidth() { return kBoardWidth_; }
 
 int32_t GameBoard::GetBoardHeight() { return kBoardHeight_; }
+
+void GameBoard::ResetGame() {
+  player_.SetPosition(kPlayerStartPos_);
+  enemy_.SetPosition(kEnemyStartPos_);
+  ball_.SetPosition(kBallStartPost_);
+}
 }  // namespace Model

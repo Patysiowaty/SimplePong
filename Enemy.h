@@ -4,6 +4,7 @@
 namespace Model {
 class Enemy : public Paddle {
  public:
+  Enemy();
   Enemy(const std::string& icon, const SDL_Point& postion,
         const SDL_Rect& size);
 
