@@ -1,21 +1,26 @@
 #pragma once
-#include "Controller.h"
+#include "EventCatcher.h"
 #include "PlayGameScene.h"
-#include "View.h"
-#include "Controller.h"
+#include "PlaySceneController.h"
+#include "Timer.h"
+#include "Window.h"
+#include "WindowController.h"
 
 class Application {
  public:
-  Application(const std::string& game_name);
+  Application();
 
-  void InitializeComponents();
+  void Initialize();
   void Run();
-  void OnQuit();
 
  private:
-  Model::PlayGameScene game_;
-  View::View view_;
-  Controller::Controller main_controller_;
+  void InitializeSDL();
 
-  std::string game_name_;
+ private:
+  Model::Window main_window_;
+  Model::PlayGameScene play_scene_;
+  Model::EventCatcher event_catcher_;
+  Controller::WindowController window_controller_;
+  Controller::PlaySceneController play_scene_controller_;
+  Timer main_timer_;
 };

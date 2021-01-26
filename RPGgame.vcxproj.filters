@@ -13,62 +13,26 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Model">
-      <UniqueIdentifier>{961e1715-c59f-4875-a0ec-67d246e1ce32}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Model\GameEngine">
-      <UniqueIdentifier>{f00c58c8-59eb-4aa7-bb61-6691d126f62c}</UniqueIdentifier>
-    </Filter>
     <Filter Include="View">
       <UniqueIdentifier>{e1938de4-df47-4258-af43-52b1c75bde08}</UniqueIdentifier>
     </Filter>
     <Filter Include="Controller">
       <UniqueIdentifier>{28f5c0d8-341e-48c1-b1a8-2df308f5eebe}</UniqueIdentifier>
     </Filter>
-    <Filter Include="View\Window">
-      <UniqueIdentifier>{e81b6e2f-14cc-4a51-aab6-6b117f3eb08b}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Controller\Controller">
       <UniqueIdentifier>{719b8c27-25c0-4ad6-b5c7-30ab58f65808}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="View\Window\WindowSize">
-      <UniqueIdentifier>{c15f815b-df5c-4821-84ee-6cfee9211bf4}</UniqueIdentifier>
     </Filter>
     <Filter Include="Controller\Commands">
       <UniqueIdentifier>{72f1ee69-a839-4a26-a9aa-d377cac30c21}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Model\Scenes">
-      <UniqueIdentifier>{3f1c1a66-2c3a-46aa-bfd0-4193f3752ed1}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Other">
       <UniqueIdentifier>{cebd686a-6489-4886-8bb0-f21bbb4745d6}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="GameObjects">
-      <UniqueIdentifier>{6106e6f9-d90b-4749-8689-4554f3d95fe8}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Model\GameBoard">
-      <UniqueIdentifier>{81a593e5-3a9f-479a-a29e-b4394795dcc3}</UniqueIdentifier>
     </Filter>
     <Filter Include="View\Texture">
       <UniqueIdentifier>{fb75db20-021b-4dd8-ac89-64a70511ca64}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Model\Paddle">
-      <UniqueIdentifier>{e620f2d8-8ef6-46c5-abc7-28cb24a327df}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Model\Paddle\Player">
-      <UniqueIdentifier>{0e4d63eb-4be9-4e69-9fef-db6c2118af14}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Model\Paddle\Enemy">
-      <UniqueIdentifier>{ff270d24-6e8d-4e64-aa05-5acaa9768609}</UniqueIdentifier>
-    </Filter>
     <Filter Include="App">
       <UniqueIdentifier>{11bb8fa3-50ef-4d9b-b681-956fdd39983e}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Model\Ball">
-      <UniqueIdentifier>{dcea6728-0b71-443b-be1d-e0e6741b71d6}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="View\Renderer">
-      <UniqueIdentifier>{c24320f9-3648-4841-99e5-59b918df16b9}</UniqueIdentifier>
     </Filter>
     <Filter Include="Listeners">
       <UniqueIdentifier>{9095b4bc-e80f-4806-9b1d-70a4286d550c}</UniqueIdentifier>
@@ -76,28 +40,55 @@
     <Filter Include="Publisher">
       <UniqueIdentifier>{769ec159-d059-4dda-a341-3e534864de0a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Controller\PlayerController">
+      <UniqueIdentifier>{87fb1455-116e-4900-aa0c-b1efbc11a81e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controller\BallController">
+      <UniqueIdentifier>{78f00f93-59ff-4c74-b181-0a130a0e6be6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controller\EnemyController">
+      <UniqueIdentifier>{ee2fa424-1866-4737-8c6e-eef9bcdc6b9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Enums">
+      <UniqueIdentifier>{f3d58cbe-0ed7-4ca3-8f73-e51a2ded9e48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Models">
+      <UniqueIdentifier>{961e1715-c59f-4875-a0ec-67d246e1ce32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Models\Scenes">
+      <UniqueIdentifier>{3f1c1a66-2c3a-46aa-bfd0-4193f3752ed1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Models\GameBoard">
+      <UniqueIdentifier>{81a593e5-3a9f-479a-a29e-b4394795dcc3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Models\GameObjects">
+      <UniqueIdentifier>{6106e6f9-d90b-4749-8689-4554f3d95fe8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Models\GameObjects\Paddle">
+      <UniqueIdentifier>{e620f2d8-8ef6-46c5-abc7-28cb24a327df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Models\GameObjects\Ball">
+      <UniqueIdentifier>{dcea6728-0b71-443b-be1d-e0e6741b71d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Models\EventPublisher">
+      <UniqueIdentifier>{390c544d-ad29-47d5-b0e3-ce07110c3f00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controller\WindowController">
+      <UniqueIdentifier>{00937e06-2f06-4523-819a-0fcd3b1ce9b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Models\Window">
+      <UniqueIdentifier>{ba1f572e-befe-4417-8976-c95326bac2fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controller\PlayGameController">
+      <UniqueIdentifier>{3c6677b2-1e8f-4f08-8c41-1a9b24d45ed5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Timer">
+      <UniqueIdentifier>{c43f5d7a-d6d2-466c-bd96-a67c4ef25d0a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="GameEngine.cpp">
-      <Filter>Model\GameEngine</Filter>
-    </ClCompile>
-    <ClCompile Include="Controller.cpp">
-      <Filter>Controller\Controller</Filter>
-    </ClCompile>
-    <ClCompile Include="View.cpp">
-      <Filter>View</Filter>
-    </ClCompile>
-    <ClCompile Include="Window.cpp">
-      <Filter>View\Window</Filter>
-    </ClCompile>
-    <ClCompile Include="WindowSize.cpp">
-      <Filter>View\Window\WindowSize</Filter>
-    </ClCompile>
     <ClCompile Include="Scene.cpp">
-      <Filter>Model\Scenes</Filter>
-    </ClCompile>
-    <ClCompile Include="MainMenu.cpp">
-      <Filter>Model\Scenes</Filter>
+      <Filter>Models\Scenes</Filter>
     </ClCompile>
     <ClCompile Include="Surface.cpp">
       <Filter>Other</Filter>
@@ -105,73 +96,73 @@
     <ClCompile Include="Application.cpp">
       <Filter>App</Filter>
     </ClCompile>
-    <ClCompile Include="TextureManager.cpp">
-      <Filter>Other</Filter>
-    </ClCompile>
     <ClCompile Include="GameObject.cpp">
-      <Filter>GameObjects</Filter>
+      <Filter>Models\GameObjects</Filter>
     </ClCompile>
     <ClCompile Include="PlayGameScene.cpp">
-      <Filter>Model\Scenes</Filter>
+      <Filter>Models\Scenes</Filter>
     </ClCompile>
     <ClCompile Include="GameBoard.cpp">
-      <Filter>Model\GameBoard</Filter>
-    </ClCompile>
-    <ClCompile Include="Player.cpp">
-      <Filter>Model\Paddle\Player</Filter>
+      <Filter>Models\GameBoard</Filter>
     </ClCompile>
     <ClCompile Include="Texture.cpp">
       <Filter>View\Texture</Filter>
     </ClCompile>
     <ClCompile Include="Paddle.cpp">
-      <Filter>Model\Paddle</Filter>
-    </ClCompile>
-    <ClCompile Include="Enemy.cpp">
-      <Filter>Model\Paddle\Enemy</Filter>
+      <Filter>Models\GameObjects\Paddle</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Ball.cpp">
-      <Filter>Model\Ball</Filter>
-    </ClCompile>
-    <ClCompile Include="Renderer.cpp">
-      <Filter>View\Renderer</Filter>
+      <Filter>Models\GameObjects\Ball</Filter>
     </ClCompile>
     <ClCompile Include="Publisher.cpp">
       <Filter>Publisher</Filter>
     </ClCompile>
-    <ClCompile Include="ModelView.cpp">
-      <Filter>View</Filter>
+    <ClCompile Include="PlayerController.cpp">
+      <Filter>Controller\PlayerController</Filter>
     </ClCompile>
-    <ClCompile Include="ModelPublisher.cpp">
-      <Filter>Publisher</Filter>
+    <ClCompile Include="BallController.cpp">
+      <Filter>Controller\BallController</Filter>
+    </ClCompile>
+    <ClCompile Include="Listener.cpp">
+      <Filter>Listeners</Filter>
+    </ClCompile>
+    <ClCompile Include="Mediator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameComponent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyController.cpp">
+      <Filter>Controller\EnemyController</Filter>
+    </ClCompile>
+    <ClCompile Include="Collider.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EventCatcher.cpp">
+      <Filter>Models\EventPublisher</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowController.cpp">
+      <Filter>Controller\WindowController</Filter>
+    </ClCompile>
+    <ClCompile Include="Window.cpp">
+      <Filter>Models\Window</Filter>
+    </ClCompile>
+    <ClCompile Include="PlaySceneController.cpp">
+      <Filter>Controller\PlayGameController</Filter>
+    </ClCompile>
+    <ClCompile Include="Timer.cpp">
+      <Filter>Timer</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="GameEngine.h">
-      <Filter>Model\GameEngine</Filter>
-    </ClInclude>
-    <ClInclude Include="Controller.h">
-      <Filter>Controller\Controller</Filter>
-    </ClInclude>
-    <ClInclude Include="View.h">
-      <Filter>View</Filter>
-    </ClInclude>
-    <ClInclude Include="Window.h">
-      <Filter>View\Window</Filter>
-    </ClInclude>
-    <ClInclude Include="WindowSize.h">
-      <Filter>View\Window\WindowSize</Filter>
-    </ClInclude>
     <ClInclude Include="ICommand.h">
       <Filter>Controller\Commands</Filter>
     </ClInclude>
     <ClInclude Include="Scene.h">
-      <Filter>Model\Scenes</Filter>
-    </ClInclude>
-    <ClInclude Include="MainMenu.h">
-      <Filter>Model\Scenes</Filter>
+      <Filter>Models\Scenes</Filter>
     </ClInclude>
     <ClInclude Include="Surface.h">
       <Filter>Other</Filter>
@@ -179,38 +170,23 @@
     <ClInclude Include="Application.h">
       <Filter>App</Filter>
     </ClInclude>
-    <ClInclude Include="TextureManager.h">
-      <Filter>Other</Filter>
-    </ClInclude>
     <ClInclude Include="GameObject.h">
-      <Filter>GameObjects</Filter>
+      <Filter>Models\GameObjects</Filter>
     </ClInclude>
     <ClInclude Include="PlayGameScene.h">
-      <Filter>Model\Scenes</Filter>
+      <Filter>Models\Scenes</Filter>
     </ClInclude>
     <ClInclude Include="GameBoard.h">
-      <Filter>Model\GameBoard</Filter>
-    </ClInclude>
-    <ClInclude Include="Player.h">
-      <Filter>Model\Paddle\Player</Filter>
+      <Filter>Models\GameBoard</Filter>
     </ClInclude>
     <ClInclude Include="Texture.h">
       <Filter>View\Texture</Filter>
     </ClInclude>
     <ClInclude Include="Paddle.h">
-      <Filter>Model\Paddle</Filter>
-    </ClInclude>
-    <ClInclude Include="MoveDirection.h">
-      <Filter>Model</Filter>
-    </ClInclude>
-    <ClInclude Include="Enemy.h">
-      <Filter>Model\Paddle\Enemy</Filter>
+      <Filter>Models\GameObjects\Paddle</Filter>
     </ClInclude>
     <ClInclude Include="Ball.h">
-      <Filter>Model\Ball</Filter>
-    </ClInclude>
-    <ClInclude Include="Renderer.h">
-      <Filter>View\Renderer</Filter>
+      <Filter>Models\GameObjects\Ball</Filter>
     </ClInclude>
     <ClInclude Include="Publisher.h">
       <Filter>Publisher</Filter>
@@ -218,14 +194,47 @@
     <ClInclude Include="Listener.h">
       <Filter>Listeners</Filter>
     </ClInclude>
-    <ClInclude Include="ModelView.h">
-      <Filter>View</Filter>
+    <ClInclude Include="PlayerController.h">
+      <Filter>Controller\PlayerController</Filter>
     </ClInclude>
-    <ClInclude Include="ModelListener.h">
-      <Filter>Listeners</Filter>
+    <ClInclude Include="BallController.h">
+      <Filter>Controller\BallController</Filter>
     </ClInclude>
-    <ClInclude Include="ModelPublisher.h">
-      <Filter>Publisher</Filter>
+    <ClInclude Include="Mediator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameComponent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyController.h">
+      <Filter>Controller\EnemyController</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectBallBounced.h">
+      <Filter>Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="MoveDirection.h">
+      <Filter>Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Collider.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EventCatcher.h">
+      <Filter>Models\EventPublisher</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowController.h">
+      <Filter>Controller\WindowController</Filter>
+    </ClInclude>
+    <ClInclude Include="Window.h">
+      <Filter>Models\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="PlaySceneController.h">
+      <Filter>Controller\PlayGameController</Filter>
+    </ClInclude>
+    <ClInclude Include="Timer.h">
+      <Filter>Timer</Filter>
+    </ClInclude>
+    <ClInclude Include="Config.h">
+      <Filter>App</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

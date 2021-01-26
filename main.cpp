@@ -1,13 +1,14 @@
+
 #include "Application.h"
 
-//Created by Patryk Ko³odziejczyk
+// Created by Patryk Ko³odziejczyk
 
 int main(int argc, char* argv[]) {
-  Application app{"Pong"};
+  Application app;
 
-  app.InitializeComponents();
+  app.Initialize();
+
   app.Run();
-  app.OnQuit();
 
   return 0;
 }

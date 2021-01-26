@@ -1,31 +1,47 @@
 #pragma once
 #include <SDL.h>
+#include <SDL_image.h>
+#include <SDL_ttf.h>
 
+#include <map>
+#include <memory>
 #include <string>
 
-#include "WindowSize.h"
+#include "Config.h"
+#include "Texture.h"
 
-namespace View {
+namespace Model {
 class Window {
  public:
   Window();
   ~Window();
 
-  void CreateWindow();
+  void SetWindowSize(const SDL_Rect& window_size);
 
-  void SetWindowName(const std::string& name);
-  void SetWindowSize(const WindowSize& window_size);
+  void Initialize();
+  void ShowWindow();
 
-  WindowSize& GetWindowSize();
-  SDL_Window* GetWindowContext();
+  void DrawTexture(SDL_Texture* texture);
+  void DrawTexture(SDL_Texture* texture, SDL_FRect* position);
+
+  void Draw();
+
+  void DestroyWindow();
+  void ResizeWindow(SDL_Rect new_window_size);
+  void ChangePosition(SDL_Rect new_window_position);
+  void RestoreDefault();
 
  private:
-  void InitializeWindow();
+  void CreateWindow();
+  void CreateRenderer();
+  void CreateWindowIcon();
 
  private:
   SDL_Window* window_ = {nullptr};
-  WindowSize window_size_ = {1280, 720};
-  std::string window_name_ = {"NONE"};
+  SDL_Renderer* renderer_ = {nullptr};
+  SDL_Surface* icon_ = {nullptr};
+  SDL_Rect window_size_ = Config::kMainWindow1280x720;
   bool is_visible_ = {false};
+  View::Texture texture_;
 };
-}  // namespace View
+}  // namespace Model

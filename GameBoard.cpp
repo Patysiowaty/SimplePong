@@ -1,45 +1,26 @@
 #include "GameBoard.h"
 
-#include <stdexcept>
+#include "Config.h"
 namespace Model {
-GameBoard::GameBoard(Player& player, Enemy& enemy, Ball& ball)
-    : player_{player}, enemy_{enemy}, ball_{ball} {}
+GameBoard::GameBoard() {}
 
 GameBoard::~GameBoard() {}
 
-void GameBoard::InitializeGame() {
-  player_.SetObjectPosition(kPlayerStartPos_);
-  enemy_.SetObjectPosition(kEnemyStartPos_);
-  ball_.SetObjectPosition(kBallStartPost_);
+void GameBoard::InitializeBoard(Model::Paddle* player, Model::Paddle* enemy,
+                                  Model::Ball* ball) {
+  player_ = {player};
+  enemy_ = {enemy};
+  ball_ = {ball};
 }
 
-Player& GameBoard::GetPlayer() { return player_; }
+bool GameBoard::Play() { return true; }
 
-void GameBoard::MovePlayer(MoveDirection direction) {
-  if (direction == MoveDirection::kDown) {
-    auto current_player_pos = player_.GetObjectPosition();
-    if (current_player_pos.y -= 1 < 0) return;
-    player_.MoveDown();
-  } else if (direction == MoveDirection::kUp) {
-    auto current_player_pos = player_.GetObjectPosition();
-    if (current_player_pos.y += 1 > kBoardWidth_) return;
-    player_.MoveUp();
-  } else
-    throw std::invalid_argument{"Illegal move!"};
+void GameBoard::ResetGame() {}
+
+void GameBoard::PlaceObjects() {
+  player_->SetObjectPosition(Config::kPlayerStartPos);
+  enemy_->SetObjectPosition(Config::kEnemyStartPos);
+  ball_->SetObjectPosition(Config::kBallStartPos);
 }
 
-int32_t GameBoard::GetBoardWidth() { return kBoardWidth_; }
-
-int32_t GameBoard::GetBoardHeight() { return kBoardHeight_; }
-
-bool GameBoard::Play() {
-
-
-    return false; }
-
-void GameBoard::ResetGame() {
-  player_.SetObjectPosition(kPlayerStartPos_);
-  enemy_.SetObjectPosition(kEnemyStartPos_);
-  ball_.SetObjectPosition(kBallStartPost_);
-}
 }  // namespace Model

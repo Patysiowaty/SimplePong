@@ -1,23 +1,17 @@
 #pragma once
-#include <cstdint>
-#include <memory>
-#include <stack>
-#include <string>
 
 #include "MainMenu.h"
 #include "PlayGameScene.h"
+#include "Scene.h"
 namespace Model {
 class GameEngine {
  public:
   GameEngine();
+  ~GameEngine();
 
   void Initialize();
 
   void Update();
-
-  void OnQuit();
-
-  //const PlayGameScene& GetCurrentScene();
 
   bool IsRunning();
 
@@ -25,7 +19,7 @@ class GameEngine {
 
  private:
   bool is_run_ = {false};
-  // TODO: Make scene changer
-  //PlayGameScene play_game_;
+
+  Scene* current_scene_ = {nullptr};
 };
 }  // namespace Model
